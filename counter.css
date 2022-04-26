@@ -1,0 +1,114 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+    line-height: 1.2rem;
+}
+
+.giveaway {
+    padding: 2rem 0;
+}
+
+h3 {
+    padding-top: 1rem;
+    color: rgb(20, 103, 59);
+    font-size: 1.5rem;
+
+}
+
+h4,
+h3 {
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.3rem;
+    color: rgb(35, 45, 80);
+    padding: 1rem 0;
+}
+
+/* target h4s after divs */
+div>h4,
+span {
+    color: white;
+
+}
+
+article {
+    display: block;
+}
+
+.deadline {
+    display: flex;
+}
+
+.deadline-format {
+    background: rgb(50, 50, 50);
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem 1rem 0 0;
+}
+
+.gift-info {
+    width: auto;
+    line-height: 1.5rem;
+}
+
+.gift-img img {
+    width: 100%;
+    /* fit img center in container */
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.section-center {
+    margin: 5rem auto;
+    width: 80vw;
+}
+
+/* SCREENS > 992PX */
+@media (min-width: 992px) {
+    .section-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: 95vw;
+        place-items: center;
+        max-width: 1170px;
+    }
+}
+
+/* SCREENS <800PX */
+@media (max-width: 992px) {
+    .section-center {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 80vw;
+        place-items: center;
+    }
+}
